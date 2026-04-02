@@ -88,7 +88,7 @@ h1, h2, h3 {
 .hero {
     position: relative;
     height: 90vh; /* Un poco menos que el total para invitar a hacer scroll */
-    background: url('https://images.unsplash.com/photo-1590736961649-711745aaf2c6?auto=format&fit=crop&q=80') center/cover no-repeat;
+    background: url("/img/hero.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
