@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Artesanias Ludys</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">Artesanías Ludys</div>
+        <a href="index.html" class="logo" style="text-decoration: none;">Artesanías Ludys</a>
 
         <nav class="nav">
-            <a href="index.html">Inicio</a>
+            <a href="index.html" class="active">Inicio</a>
             <a href="productos.html">Productos</a>
+            <a href="blog.html">Blog</a>
             <a href="historia.html">Historia</a>
             <a href="contacto.html">Contacto</a>
         </nav>
@@ -24,84 +27,139 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Artesanías hechas a mano</h1>
-            <p>Tradición, cultura y diseño en cada pieza</p>
+            <h1>Artesanías únicas hechas a mano</h1>
+            <p>Tradición y cultura convertidas en piezas de arte para tu hogar.</p>
+
             <div class="hero-buttons">
-                <button>Ver productos</button>
-                <button class="btn-secondary">Contactar</button>
+                <a href="productos.html" class="btn-primary">Explorar Colección</a>
+                <a href="contacto.html" class="btn-secondary">Pedir Información</a>
             </div>
         </div>
     </section>
 
     <!-- PRODUCTS SECTION -->
 
-    <section class="productos">
-        <h2>Productos destacados</h2>
+    <section class="productos-destacados">
+        <div class="seccion-header">
+            <span>Colección Curada</span>
+            <h2>Piezas Destacadas</h2>
+            <div class="linea-decorativa"></div>
+        </div>
 
         <div class="grid-productos">
+            <article class="producto-card">
+                <div class="producto-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Mochila artesanal">
+                    <div class="badge">Nuevo</div>
+                </div>
+                <div class="producto-info">
+                    <h3>Mochila Wayúu Tradicional</h3>
+                    <p class="precio">$45.00</p>
+                    <a href="producto-detalle.html" class="btn-ver">Ver Detalles</a>
+                </div>
+            </article>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="">
-                <h3>Mochila artesanal</h3>
-                <p>$45</p>
-            </div>
+            <article class="producto-card">
+                <div class="producto-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a41552231658" alt="Collar artesanal">
+                </div>
+                <div class="producto-info">
+                    <h3>Collar de Cuentas Naturales</h3>
+                    <p class="precio">$20.00</p>
+                    <a href="producto-detalle.html" class="btn-ver">Ver Detalles</a>
+                </div>
+            </article>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1585386959984-a41552231658" alt="">
-                <h3>Collar hecho a mano</h3>
-                <p>$20</p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0" alt="">
-                <h3>Decoración artesanal</h3>
-                <p>$30</p>
-            </div>
-
+            <article class="producto-card">
+                <div class="producto-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0" alt="Decoración">
+                </div>
+                <div class="producto-info">
+                    <h3>Vasija de Barro Cocido</h3>
+                    <p class="precio">$30.00</p>
+                    <a href="producto-detalle.html" class="btn-ver">Ver Detalles</a>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- BENEFICIOS SECTION -->
 
     <section class="beneficios">
-        <div>
+        <div class="beneficio-card">
+            <span class="icon">✨</span>
             <h3>Hecho a mano</h3>
-            <p>Cada pieza es única y elaborada con dedicación</p>
+            <p>Cada pieza es única, cargada de historia y elaborada con dedicación por manos expertas.</p>
         </div>
-        <div>
+        <div class="beneficio-card">
+            <span class="icon">🌿</span>
             <h3>Materiales naturales</h3>
-            <p>Usamos materiales sostenibles y de calidad</p>
+            <p>Respetamos la tierra usando fibras sostenibles y procesos amigables con el medio ambiente.</p>
         </div>
-        <div>
-            <h3>Envíos disponibles</h3>
-            <p>Llevamos nuestras artesanías hasta tu hogar</p>
+        <div class="beneficio-card">
+            <span class="icon">📦</span>
+            <h3>Envíos seguros</h3>
+            <p>Protegemos tu tesoro artesanal para que llegue impecable hasta la puerta de tu hogar.</p>
         </div>
     </section>
 
     <!-- TESTIMONIOS SECTION -->
 
     <section class="testimonios">
-        <h2>Lo que dicen nuestros clientes</h2>
-
-        <div class="testimonio">
-            <p>"Hermosos productos, excelente calidad"</p>
-            <span>- Cliente feliz</span>
+        <div class="seccion-header">
+            <span>Experiencias</span>
+            <h2>Lo que dicen nuestros coleccionistas</h2>
+            <div class="linea-decorativa"></div>
         </div>
 
-        <div class="testimonio">
-            <p>"Se nota el trabajo artesanal, recomendado"</p>
-            <span>- Cliente satisfecho</span>
+        <div class="grid-testimonios">
+            <div class="testimonio-card">
+                <div class="estrellas">★★★★★</div>
+                <p>"La mochila que compré tiene un tejido impecable. Se nota el amor y la tradición en cada hilo."</p>
+                <span class="cliente">- María Fernanda R.</span>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="estrellas">★★★★★</div>
+                <p>"Un servicio excepcional. El envío llegó rápido y el empaque protegía perfectamente la vasija."</p>
+                <span class="cliente">- Carlos Mendoza</span>
+            </div>
         </div>
     </section>
 
-    <!-- CTA FINAL SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="logo">Artesanías Ludys</h2>
+                <p>Preservando la cultura y el arte hecho a mano para el mundo moderno.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
 
-    <section class="cta">
-        <h2>Descubre piezas únicas hoy</h2>
-        <a class="btn-primary" href="productos.html">Ver productos</a>
-    </section>
-
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Artesanías Ludys - Todos los derechos reservados</p>
+        </div>
+    </footer>
 
 </body>
 

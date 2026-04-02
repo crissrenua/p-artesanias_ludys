@@ -10,47 +10,63 @@
 
 <body>
     <header class="header">
-        <div class="logo">Artesanías Ludys</div>
+        <a href="index.html" class="logo" style="text-decoration: none;">Artesanías Ludys</a>
+
         <nav class="nav">
-            <a href="index.html">Inicio</a>
+            <a href="index.html" class="active">Inicio</a>
             <a href="productos.html">Productos</a>
+            <a href="blog.html">Blog</a>
             <a href="historia.html">Historia</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
 
-    <section class="contacto">
+    <main class="contacto-wrapper">
+        <header class="seccion-header">
+            <span>Estamos para servirte</span>
+            <h1>Ponte en contacto</h1>
+            <div class="linea-decorativa"></div>
+        </header>
 
-        <div class="contacto-container">
-
-            <div class="contacto-info">
-                <h1>Hablemos</h1>
-                <p>
-                    Si tienes preguntas, deseas adquirir una pieza o conocer más sobre nuestro trabajo,
-                    estaremos encantados de atenderte.
-                </p>
-
-                <div class="contacto-detalles">
-                    <p><strong>Email:</strong> contacto@artesaniasludys.com</p>
-                    <p><strong>Ubicación:</strong> Panamá</p>
+        <div class="contacto-grid">
+            <div class="contacto-info-box">
+                <div class="info-item">
+                    <h3>Ubicación</h3>
+                    <p>Visítanos en nuestro taller artesanal:<br>Calle Principal #123, Tu Ciudad.</p>
                 </div>
-
-                <a class="btn-primary" href="https://wa.me/507XXXXXXXX" target="_blank">
-                    WhatsApp
-                </a>
+                <div class="info-item">
+                    <h3>WhatsApp</h3>
+                    <p>Escríbenos para pedidos personalizados:<br><strong>+57 300 123 4567</strong></p>
+                </div>
+                <div class="info-item">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Sábado: 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="social-links-contacto">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
             </div>
 
-            <form class="formulario">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo electrónico">
-                <textarea placeholder="Mensaje"></textarea>
-                <button class="btn-primary">Enviar</button>
-            </form>
-
+            <div class="contacto-form-container">
+                <form class="formulario-moderno">
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Ej. Maria Lopez" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="maria@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>¿En qué podemos ayudarte?</label>
+                        <textarea rows="5" placeholder="Cuéntanos sobre el producto que te interesa..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
-
-    </section>
-
+    </main>
 </body>
 
 </html>
