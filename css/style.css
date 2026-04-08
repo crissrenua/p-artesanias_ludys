@@ -114,7 +114,7 @@ h1, h2, h3 {
 .hero {
     position: relative;
     height: 90vh; /* Un poco menos que el total para invitar a hacer scroll */
-    background: url("/img/hero.jpg") center/cover no-repeat;
+    background: url("/img/hero.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
